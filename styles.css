@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.editor {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.toolbar button, .toolbar select, .toolbar input[type="color"], .toolbar input[type="text"] {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.toolbar button:hover, .toolbar select:hover, .toolbar input[type="color"]:hover {
+    background-color: #ddd;
+}
+
+.toolbar input[type="text"] {
+    flex: 1;
+    min-width: 100px;
+}
+
+.text-area {
+    padding: 15px;
+    min-height: 200px;
+    outline: none;
+    font-size: 16px; /* Tamaño de fuente predeterminado */
+}
